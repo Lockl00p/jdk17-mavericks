@@ -89,7 +89,6 @@ public final class MTLGraphicsConfig extends CGraphicsConfig
     private final Object disposerReferent = new Object();
     private final int maxTextureSize;
 
-    private static native boolean isMetalFrameworkAvailable();
     private static native boolean tryLoadMetalLibrary(int displayID, String shaderLib);
     private static native long getMTLConfigInfo(int displayID, String mtlShadersLib);
 
@@ -100,7 +99,7 @@ public final class MTLGraphicsConfig extends CGraphicsConfig
     private static native int nativeGetMaxTextureSize();
 
     static {
-        mtlAvailable = isMetalFrameworkAvailable();
+        mtlAvailable = false;
     }
 
     private MTLGraphicsConfig(CGraphicsDevice device,
