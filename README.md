@@ -1,5 +1,5 @@
 # Welcome to the JDK!
-
+This is a JDK repo patched with https://github.com/Jazzzny/jdk-macos-legacy
 For build instructions please see the
 [online documentation](https://openjdk.java.net/groups/build/doc/building.html),
 or either of these files:
